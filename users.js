@@ -6,9 +6,8 @@ bot.on('ready', function() {
 
     // bot.user.setActivity(null)
 
-    for( x in bot.users.array()){
-       var user = bot.users.array()[x];
-       console.log(user.username)
+    for( x of bot.users.array()){
+       console.log(x.username)
     }
     
 })
